@@ -15,7 +15,7 @@ const app = express();
 const parser = bodyParser.text();
 
 app.get("/ping", (req, res) => {
-  res.status(200).send();
+  res.status(200).send('Hi');
 });
 
 app.put('/item', parser, putItem);
